@@ -8,7 +8,11 @@
   --shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-*{box-sizing:border-box;margin:0;padding:0}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,19 +20,21 @@ body {
   color: white;
 }
 
+/* ====== Contenedor principal ====== */
 .container {
   max-width: 1100px;
   margin: auto;
   padding: 0 16px;
 }
 
-/* Topbar */
+/* ====== Barra superior ====== */
 .topbar {
   background: var(--card);
   box-shadow: var(--shadow);
   padding: 14px 0;
-  position: sticky;
+  position: sticky;  /* se queda fija arriba */
   top: 0;
+  z-index: 100;      /* asegura que quede encima de todo */
 }
 .topbar .container {
   display: flex;
@@ -44,7 +50,7 @@ body {
 .topbar nav a:hover { color: var(--accent); }
 .logo { font-size: 20px; font-weight: bold; color: var(--accent); }
 
-/* Layout */
+/* ====== Layout ====== */
 .layout {
   display: grid;
   grid-template-columns: 220px 1fr 250px;
@@ -52,7 +58,7 @@ body {
   margin-top: 20px;
 }
 
-/* Cards */
+/* ====== Tarjetas ====== */
 .card {
   background: var(--card);
   border-radius: var(--radius);
@@ -60,13 +66,13 @@ body {
   padding: 16px;
 }
 
-/* Perfil */
+/* ====== Perfil ====== */
 .profile { text-align: center; }
 .avatar { width: 80px; border-radius: 50%; }
 .avatar-sm { width: 40px; border-radius: 50%; }
 .muted { color: var(--muted); font-size: 14px; }
 
-/* Botones */
+/* ====== Botones ====== */
 .btn {
   background: transparent;
   border: 1px solid var(--muted);
@@ -78,9 +84,9 @@ body {
 .btn.primary { background: var(--accent); border: none; }
 .btn.small { font-size: 12px; padding: 6px 10px; }
 
-/* Crear post (normal, no se queda fijo al scrollear) */
+/* ====== Crear publicación ====== */
 .post-creator {
-  position: relative;   /* valor por defecto */
+  position: relative; /* bloque normal, no se queda fijo */
   background: var(--card);
   padding: 14px;
   border-radius: var(--radius);
@@ -89,8 +95,6 @@ body {
   flex-direction: column;
   gap: 10px;
 }
-
-/* Textarea ajustado */
 .post-creator textarea {
   width: 100%;
   min-height: 80px;
@@ -101,23 +105,24 @@ body {
   background: #2a2a3d;
   color: white;
 }
-
-/* Botón alineado abajo del cuadro */
 .post-creator .btn {
-  align-self: flex-end;   /* empuja el botón a la derecha */
+  align-self: flex-end;  /* botón a la derecha */
 }
 
+/* ====== Posts ====== */
+.feed { display: flex; flex-direction: column; gap: 20px; }
+.post-header { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.post-img { width: 100%; border-radius: var(--radius); margin-top: 10px; }
+.post-actions { display: flex; gap: 8px; margin-top: 10px; }
 
-/* Tendencias */
+/* ====== Tendencias ====== */
 .trending ol { margin-left: 20px; }
 
-/* Footer */
+/* ====== Footer ====== */
 .footer { text-align: center; padding: 20px; color: var(--muted); }
 
-/* Responsive */
+/* ====== Responsive ====== */
 @media (max-width: 900px) {
   .layout { grid-template-columns: 1fr; }
   .sidebar, .trending { order: 3; }
 }
-
-
