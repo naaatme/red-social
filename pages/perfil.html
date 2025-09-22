@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CatNet - Perfil</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="perfil-page">
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="container">
+      <div class="logo">🐾 CatNet</div>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="adopciones.html">Adopciones</a>
+        <a href="mensajes.html">Mensajes</a>
+        <a href="perfil.html" class="active">Perfil</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Layout principal -->
+  <main class="container layout">
+    <!-- Sidebar (oculto en perfil) -->
+    <aside class="sidebar" style="display: none;">
+      <!-- Este espacio se oculta en la página de perfil -->
+    </aside>
+
+    <!-- Feed/Perfil -->
+    <section class="feed">
+      <!-- Encabezado del perfil -->
+      <div class="card profile-header">
+        <div class="profile-info">
+          <img src="images/avatar.jpg" alt="avatar" class="avatar-large">
+          <div class="profile-details">
+            <div class="profile-username">
+              <h2>MichiLover</h2>
+              <button class="btn">Editar perfil</button>
+              <button class="btn outline">Ver archivos</button>
+            </div>
+            
+            <div class="profile-stats">
+              <div><strong>15</strong> publicaciones</div>
+              <div><strong>342</strong> seguidores</div>
+              <div><strong>287</strong> seguidos</div>
+            </div>
+            
+            <div class="profile-bio">
+              <strong>MichiLover</strong>
+              <p>Amo a los gatos desde que tengo memoria 🐱✨</p>
+              <p>#CatLover #Gatitos #RescateAnimal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Historias destacadas -->
+      <div class="card profile-highlights">
+        <div class="highlight">
+          <div class="highlight-circle">
+            <img src="images/gato1.jpg" alt="Historia 1">
+          </div>
+          <span>Luna</span>
+        </div>
+        <div class="highlight">
+          <div class="highlight-circle">
+            <img src="images/gato3.jpg" alt="Historia 2">
+          </div>
+          <span>Michifuz</span>
+        </div>
+        <div class="highlight">
+          <div class="highlight-circle">
+            <span>+</span>
+          </div>
+          <span>Nuevo</span>
+        </div>
+      </div>
+
+      <!-- Pestañas de perfil -->
+      <div class="card profile-tabs">
+        <div class="tab active">
+          <span>PUBLICACIONES</span>
+        </div>
+        <div class="tab">
+          <span>GUARDADO</span>
+        </div>
+        <div class="tab">
+          <span>ETIQUETADAS</span>
+        </div>
+      </div>
+
+<!-- Grid de publicaciones -->
+<section class="profile-posts-grid">
+  <!-- Publicación 1 -->
+  <div class="profile-post-card">
+    <img src="images/gato1.jpg" alt="Publicación 1" class="profile-post-image">
+    <div class="profile-post-info">
+      <p>Mi gata micha está tomando una siesta 💤</p>
+    </div>
+    <div class="profile-post-actions">
+      <div class="profile-post-stats">
+        <span>❤️ 42</span>
+        <span>💬 7</span>
+      </div>
+      <button class="btn small">Ver más</button>
+    </div>
+  </div>
+  
+  <!-- Publicación 2 -->
+  <div class="profile-post-card">
+    <img src="images/gato3.jpg" alt="Publicación 2" class="profile-post-image">
+    <div class="profile-post-info">
+      <p>Mi gato micho buscando atención mientras hago tarea 🎮</p>
+    </div>
+    <div class="profile-post-actions">
+      <div class="profile-post-stats">
+        <span>❤️ 28</span>
+        <span>💬 3</span>
+      </div>
+      <button class="btn small">Ver más</button>
+    </div>
+  </div>
+  
+  <!-- Más publicaciones... -->
+</section>
+
+</body>
+</html>
