@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CatNet - Feed</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="container">
+      <div class="logo">🐾 CatNet</div>
+      <nav>
+        <a href="index.html" class="active">Inicio</a>
+        <a href="adopciones.html">Adopciones</a>
+        <a href="mensajes.html">Mensajes</a>
+        <a href="perfil.html">Perfil</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Layout principal -->
+  <main class="container layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="card profile">
+        <img src="images/avatar.jpg" alt="avatar" class="avatar">
+        <h3>MichiLover</h3>
+        <p class="muted">@gato_fan</p>
+        <button class="btn">Ver Perfil</button>
+      </div>
+    </aside>
+
+    <!-- Feed -->
+    <section class="feed">
+      <!-- Crear publicación -->
+      <div class="card post-creator">
+        <textarea placeholder="¿Qué está haciendo tu gato hoy?"></textarea>
+        <button class="btn primary">Publicar</button>
+      </div>
+
+      <!-- Post 1 -->
+      <article class="card post">
+        <header class="post-header">
+          <img src="images/avatar.jpg" alt="avatar" class="avatar-sm">
+          <div>
+            <strong>CatLover99</strong>
+            <p class="muted">Hace 1h</p>
+          </div>
+        </header>
+        <p>Mi gata micha está tomando una siesta 💤</p>
+        <img src="images/gato1.jpg" alt="foto de gato" class="post-img">
+        <div class="post-actions">
+          <button class="btn small">❤️ Me gusta</button>
+          <button class="btn small">💬 Comentar</button>
+          <button class="btn small">📤 Compartir</button>
+        </div>
+      </article>
+
+      <!-- Post 2 -->
+      <article class="card post">
+        <header class="post-header">
+          <img src="images/avatar.jpg" alt="avatar" class="avatar-sm">
+          <div>
+            <strong>GamerCat</strong>
+            <p class="muted">Hace 3h</p>
+          </div>
+        </header>
+        <p>Mi gato micho buscando atención mientras hago tarea 🎮</p>
+        <img src="images/gato3.jpg" alt="foto de gato" class="post-img">
+        <div class="post-actions">
+          <button class="btn small">❤️ Me gusta</button>
+          <button class="btn small">💬 Comentar</button>
+          <button class="btn small">📤 Compartir</button>
+        </div>
+      </article>
+
+      <!-- Post 3 (placeholder de imagen) -->
+      <article class="card post">
+        <header class="post-header">
+          <img src="images/avatar1.jpg" alt="avatar" class="avatar-sm">
+          <div>
+            <strong>SleepyCat</strong>
+            <p class="muted">Hace 5h</p>
+          </div>
+        </header>
+        <p>Mi michi encontró una caja nueva y no quiere salir 📦😹</p>
+        <img src="images/tu_imagen1.jpg" alt="foto de gato" class="post-img">
+        <div class="post-actions">
+          <button class="btn small">❤️ Me gusta</button>
+          <button class="btn small">💬 Comentar</button>
+          <button class="btn small">📤 Compartir</button>
+        </div>
+      </article>
+
+      <!-- Post 4 (placeholder de imagen) -->
+      <article class="card post">
+        <header class="post-header">
+          <img src="images/avatar2.jpg" alt="avatar" class="avatar-sm">
+          <div>
+            <strong>LunaCat</strong>
+            <p class="muted">Hace 7h</p>
+          </div>
+        </header>
+        <p>Hoy adopté a una nueva gatita, ¡se llama Luna! 🌙💖</p>
+        <img src="images/tu_imagen2.jpg" alt="foto de gato" class="post-img">
+        <div class="post-actions">
+          <button class="btn small">❤️ Me gusta</button>
+          <button class="btn small">💬 Comentar</button>
+          <button class="btn small">📤 Compartir</button>
+        </div>
+      </article>
+
+      <!-- Post 5 (placeholder de imagen) -->
+      <article class="card post">
+        <header class="post-header">
+          <img src="images/avatar3.jpg" alt="avatar" class="avatar-sm">
+          <div>
+            <strong>BigotesFan</strong>
+            <p class="muted">Hace 10h</p>
+          </div>
+        </header>
+        <p>Bigotes no deja de mirar por la ventana 🌳🐦</p>
+        <img src="images/tu_imagen3.jpg" alt="foto de gato" class="post-img">
+        <div class="post-actions">
+          <button class="btn small">❤️ Me gusta</button>
+          <button class="btn small">💬 Comentar</button>
+          <button class="btn small">📤 Compartir</button>
+        </div>
+      </article>
+    </section>
+
+ <!-- Tendencias -->
+<aside class="trending">
+  <div class="card">
+    <h4>🐱 Tendencias Gatunas</h4>
+    <ol>
+      <li>#GatosGamers</li>
+      <li>#SleepyCat</li>
+      <li>#HoyoverseCats</li>
+      <li>#RiotCats</li>
+    </ol>
+  </div>
+
+  <!-- Personas conectadas -->
+  <div class="card">
+    <h4>👥 Usuarios</h4>
+    <ul class="user-status">
+      <li><span class="status online"></span> MichiLover</li>
+      <li><span class="status busy"></span> GamerCat</li>
+      <li><span class="status offline"></span> SleepyCat</li>
+    </ul>
+  </div>
+</aside>
+
+</body>
+</html>
